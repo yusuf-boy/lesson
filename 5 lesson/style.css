@@ -1,0 +1,9 @@
+body{
+    background-color: aquamarine;
+}
+h1{
+    color: blueviolet; text-align: center;
+}
+p{
+    font-size: 20px; color: brown; border: 2px solid #fff; padding: 20px; border-radius: 15px;
+}
