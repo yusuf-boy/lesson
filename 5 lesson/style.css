@@ -1,5 +1,5 @@
 /* Element selecot*/
-body {
+/*body {
     background-color: aquamarine;
 }
 h1 {
@@ -11,10 +11,10 @@ p {
     border: 2px solid #fff; 
     padding: 20px; 
     border-radius: 15px;
-}
+} */
 
 /* class selector */
-.club-1{
+/*.club-1{
     color: red;
 }
 
@@ -24,24 +24,86 @@ p {
 
 .club-3 {
     font-family: monospace;
-}
+}  */
 
 /* camelCase*/
-.myNewClub {
+/*.myNewClub {
     color: blueviolet;
-}
+} */
 
 /* id selector */
-#theBest {
+/*#theBest {
     color: blue;
-}
+} */
 
 /* attirbute selector */
-[disabled] {
+/*[disabled] {
     font-size: 25px;
-}
+} */
 
 /* * - unversal selec */
 
 /* selector*/
 /* *, attribute, element, class, id, */
+
+
+
+
+/* - unversal selec 
+* {
+    color: red;
+}
+
+/* Element selecot
+h1 {
+    color: blue;
+}
+
+/* attirbute selector 
+[disabled] {
+    color: cyan;
+}
+
+/* class selector 
+.heading-class {
+    color: yellow;
+}
+
+/* id selector 
+#heading-id {
+    color: orangered;
+} */
+
+
+
+/*#heading-id {
+    color: red;
+}
+
+#heading-id-second {
+    color: yellow;
+} */
+
+
+[disabled] {
+    color:black 
+}
+
+#heading {
+    color: aqua;
+}
+
+.class-two {
+    color: aquamarine;
+}
+
+.class-one {
+    color: violet;
+}
+
+
+/* 1) inline */
+/* 2) Id */
+/* 3) class (attibute) */
+/* 4) elemnt */
+/* 5) unversal */
