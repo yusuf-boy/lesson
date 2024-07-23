@@ -1,9 +1,47 @@
-body{
+/* Element selecot*/
+body {
     background-color: aquamarine;
 }
-h1{
-    color: blueviolet; text-align: center;
+h1 {
+    color: blueviolet; 
+    text-align: center;
 }
-p{
-    font-size: 20px; color: brown; border: 2px solid #fff; padding: 20px; border-radius: 15px;
+p {
+    font-size: 20px; color: brown; 
+    border: 2px solid #fff; 
+    padding: 20px; 
+    border-radius: 15px;
 }
+
+/* class selector */
+.club-1{
+    color: red;
+}
+
+.club-2 {
+    font-size: 20px;
+}
+
+.club-3 {
+    font-family: monospace;
+}
+
+/* camelCase*/
+.myNewClub {
+    color: blueviolet;
+}
+
+/* id selector */
+#theBest {
+    color: blue;
+}
+
+/* attirbute selector */
+[disabled] {
+    font-size: 25px;
+}
+
+/* * - unversal selec */
+
+/* selector*/
+/* *, attribute, element, class, id, */
