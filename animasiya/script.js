@@ -1,0 +1,1 @@
+document.querySelector(".Home").style.setProperty("--height", window.innerHeight + "px");

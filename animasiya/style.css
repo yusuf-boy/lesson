@@ -65,7 +65,7 @@ header nav a:hover{
 .text-box h1:nth-child(2){
     color: white;
     font-size: 62px;
-    animation-delay: 1.5;
+    animation-delay: 1.5s;
 }
 
 .text-box p{
@@ -161,7 +161,7 @@ header nav a:hover{
 }
 
 @keyframes face {
-    0%, 100%{
+    0%,100%{
         transform: translateY(10px);      
     }
     50%{
@@ -173,8 +173,28 @@ header nav a:hover{
     animation: face 8s ease-in-out infinite;
 }
 
+
+@keyframes Home-background {
+    0%{
+        background-position: 0 0;
+    }
+    100%{
+        background-position: 0 var(--height);
+    }
+}
+
+@keyframes Home-opacity {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
 .Home{
-    background-image: url(picture1/image\ copy.png);
+    background-image: url(picture1/light.png);
     background-size: 100% 100%;
     background-position: 0 var(--height);
+    animation: Home-background 3s lineear infinite, Home-opacity 3.5s ease forwards;
 }
