@@ -1,0 +1,19 @@
+body{
+    background-image: url(background.png);
+    background-size: cover;
+}
+.mt-1{
+    margin-left: 5px;
+    margin-bottom: 10px;
+}
+.btn{
+    margin-top: 10px;
+    position: relative;
+    color: white;
+    padding: 12px 30px;
+    font-size: 22px;
+    border: 2px solid #de12d0;
+    background: transparent;
+    border-radius: 5px;
+    cursor: pointer;
+}
