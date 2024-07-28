@@ -7,19 +7,22 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body style="text-align: center;">
-    <section>
-        <main>
-            <div>
-                <input class="mt-1" type="text" placeholder="Nomer">
-                <input class="mt-1" type="text" placeholder="Usernam">
-            <div>
-                <textarea name="" id=""></textarea>
-            </div>
-            <div class="text-box">
-                    <button class="btn">Start Now</button>
-            </div>
+    <section class="Home" style="position: relative; height: 100%;">
+        <main style="display: flex; flex-direction: column; align-items: center;">
+            <form action="" method="post" class="mt-1">
+                <div>
+                    <input class="ml-1 phone-input" type="text" placeholder="Телефонный номер"  name="phone_no">
+                    <input class="ml-1 username-input"  type="text" placeholder="username" name="username">
+                <div class="mt-1">
+                    <textarea name="description" id=""></textarea>
+                </div>
+                <div class="text-box">
+                        <button class="btn mt-1" type="submit">Start Now</button>
+                </div>
+            </form>
         </main>
-        <img src="background.png" alt="">
+        <img src="rotating-img.png" class="rotating-img">
+        
     </section>
 </body>
 </html>
