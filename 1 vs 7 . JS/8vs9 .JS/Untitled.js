@@ -18,9 +18,11 @@ console.log(fullName[0])
 console.log(fullName.length)
 
 // string methods => funktsiyaga o'xshash ish bajaradi
+//yozuvni kata qiladi
 console.log(fullName.toUpperCase())
 
-let result = fullName.toLowerCase()
+//yozuvni kichkina qiladi
+let result = (fullName.toLowerCase())
 console.log(result)
 
 let index = email.indexOf('@')
