@@ -10,11 +10,11 @@ let reult = email.indexOf('a')
 console.log(reult)*/
 
 /*// slice() kesib beradi
-let reult = email.slice(1,2)
+let reult = email.slice(1,6)
 console.log(reult)*/
 
-/*// substr()
-let reult = email.substr(1, 3).length
+/*// substr() qaysi sozlar kerah bolsa shuni oladi
+let reult = email.substr(1, 3)
 console.log(reult)*/
 
 /*// repLace() < almashtirish >
@@ -22,17 +22,17 @@ let reult = email.replace('a', 'd')
 console.log(reult)*/
 
 /*// charAt() < -birinchi harakterni olib beradi >
-let reult = email.charAt()
+let reult = email.charAt(1)
 console.log(reult)*/
 
-/*// toUpperCase() - toLowerCase() kata va kichkina qiladi
+/* // toUpperCase() - toLowerCase() kata va kichkina qiladi
 let reult = email.toLowerCase()
 console.log(reult)*/
 
-/*// trim()
+/* // trim()
 let reult = email.trim()
 console.log(reult.length, email.length)*/
 
-/*// split()
-let reult = email.split('a')
-console.log(reult)*/
+// split()
+let reult = email.split('')
+console.log(reult)
