@@ -1,0 +1,21 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        // Foydalanuvchidan kuchlanishni kiritishni so'raymiz
+        Console.Write("Kuchlanishni kiriting (V): ");
+        double kuchlanish = Convert.ToDouble(Console.ReadLine());
+
+        // Foydalanuvchidan tok kuchini kiritishni so'raymiz
+        Console.Write("Tok kuchini kiriting (A): ");
+        double tokKuchi = Convert.ToDouble(Console.ReadLine());
+
+        // Qarshilikni hisoblaymiz
+        double qarshilik = kuchlanish / tokKuchi;
+
+        // Natijani ekranga chiqaramiz
+        Console.WriteLine("O'tkazgich qarshiligi: " + qarshilik + " Ohm");
+    }
+}
