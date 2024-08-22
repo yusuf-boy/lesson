@@ -29,4 +29,4 @@ while (condition) {
 
 
 
-console.log(isGreaterThan)
+console.log(result)
