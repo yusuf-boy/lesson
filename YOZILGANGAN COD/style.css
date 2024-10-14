@@ -1,0 +1,53 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box; 
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-image: url(rasim/background.png);
+    background-size: cover;
+    color: #de12d0;
+}
+.bit{
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between;
+}
+.name{
+    padding: 10px;
+}
+.Home{
+    font-size: 34px; 
+    padding: 10px;
+}
+.text-align{
+    text-align: center;
+}
+header nav{
+    font-size: 30px; 
+    display: flex; 
+    justify-content: space-around; 
+    flex-grow: 1;
+}
+header h1{
+    padding: 10px 0.5cap;
+}
+header nav a{
+    color: white;
+    font-size: 25px;
+    padding-bottom: 0px;
+    
+}
+header nav .active,
+header nav a:hover{
+     color: #de12d0;
+}
+.text-box p{
+    padding: 10px;
+    margin: 40px 0;
+    font-size: 26px;
+    width: 80%;
+    color: #999999;
+}
