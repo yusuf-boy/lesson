@@ -1,4 +1,4 @@
-// 4. O'zgaruvchilar
+// 1. O'zgaruvchilar
 // JavaScriptda o'zgaruvchilarni yaratish uchun var, let yoki const kalit so'zlari ishlatiladi.
 let ism = "Ali ";
 var yosh = 25;
@@ -11,7 +11,7 @@ let ntj = ism + yosh + davlat;
 
 console.log(ntj);
 
-// 5. Operatsiyalar va shartli iboralar
+// 2. Operatsiyalar va shartli iboralar
 // Matematik amallarni bajarish:
 let a = 10;
 let b = 5;
@@ -25,14 +25,14 @@ if (yosh >= 18) {
     console.log("siz kichiksiz.");
 }
 
-// 6. Sikllar
+// 3. Sikllar
 // JavaScriptda takroriy operatsiyalarni bajarish uchun sikllar ishlatiladi:
 
 for (let i = 0; i < 5; i++) {
     console.log(i); // 0 dan 4 gacha bo'lgan raqamlar chiqadi
 } 
 
-// 7. Funksiyalar
+// 4. Funksiyalar
 // Funksiya - bu kod bo'lagini qayta ishlatishga imkon beradigan usul:
 function salomBer(ism) {
     console.log("salom, " + ism + "!");
@@ -40,7 +40,8 @@ function salomBer(ism) {
 
 salomBer("ali"); //"salom, ali!" chigadi
 
-// 8.DOM bilan ishlash
+
+// 5.DOM bilan ishlash
 // JavaScript yordamida HTML elementlarini boshqarish mumkin. Masalan:
 document.getElementById("myElement").innerHTML = "Yangi matn!";
 //Bu kod id is myElement bo'lgan HTML elementining ichidagi matnni o'zgartiradi.
