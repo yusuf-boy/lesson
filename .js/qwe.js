@@ -1,50 +1,60 @@
-// 1. O'zgaruvchilar
-// JavaScriptda o'zgaruvchilarni yaratish uchun var, let yoki const kalit so'zlari ishlatiladi.
-let ism = "Ali ";
-var yosh = 25;
-const davlat= " O'zbekiston";
-let ntj = ism + yosh + davlat;
+// int
+// flost
+// string
+// boolean
+// array
 
-// let - o'zgaruvchini qayta aniqlash mumkin.
-// var - eski usul, lekin hamon ishlatiladi.
-// const - bu o'zgaruvchini o'zgartirib bo'lmaydi.
+// var name = "Ali";
+// var years = 2;
+// const country= " O'zbekiston";
+var array = [1,2,3,4, [1.2 ,2, 3, ['dsa', true, [1] ] ] ];
+// array[4][3][2][0]
 
-console.log(ntj);
+// var isBoy = true;
 
-// 2. Operatsiyalar va shartli iboralar
-// Matematik amallarni bajarish:
-let a = 10;
-let b = 5;
-let natija = a + b; // natija 15 ga teng bo'ladi
-console.log(natija);
+// var result = name + years + country;
 
-//shartli iboralar:
-if (yosh >= 18) {
-    console.log("Siz kattasiz. ");
-} else {
-    console.log("siz kichiksiz.");
+
+// console.log(result);
+
+// var a = 10 + 5;
+
+// if (years >= 18) {
+//     console.log("Siz kattasiz. ");
+// } else {
+//     console.log("siz kichiksiz.");
+// }
+
+// for (let i = 0; i < 5; i++) {
+//     console.log(i);
+// }
+
+
+// array.forEach(element => {
+
+//     if (Array.isArray(element)) {
+//         element.forEach(i => {
+//             console.log(i);
+//         });
+//     }else{
+//         console.log(element);
+//     }
+// });
+
+// function Hello(name, years) {
+  
+//     console.log("name, " + name + ' years ' + years + "!");
+// }
+// Hello('Muhammadislom','26')
+// Hello('Yusuf','23')
+
+
+// najim
+// riki
+
+function doc(name, years, color, food){
+
+    console.log("name: " + name + years + " years " + color + " favorite food" + food);
 }
-
-// 3. Sikllar
-// JavaScriptda takroriy operatsiyalarni bajarish uchun sikllar ishlatiladi:
-
-for (let i = 0; i < 5; i++) {
-    console.log(i); // 0 dan 4 gacha bo'lgan raqamlar chiqadi
-} 
-
-// 4. Funksiyalar
-// Funksiya - bu kod bo'lagini qayta ishlatishga imkon beradigan usul:
-function salomBer(ism) {
-    console.log("salom, " + ism + "!");
-}
-
-salomBer("ali"); //"salom, ali!" chigadi
-
-
-// 5.DOM bilan ishlash
-// JavaScript yordamida HTML elementlarini boshqarish mumkin. Masalan:
-document.getElementById("myElement").innerHTML = "Yangi matn!";
-//Bu kod id is myElement bo'lgan HTML elementining ichidagi matnni o'zgartiradi.
-
-
-
+doc("nashim", " 4", "color black", " go'sh")
+doc("riki", " 8", "color chocolate", " go'sh")
