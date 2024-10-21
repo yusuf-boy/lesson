@@ -1,7 +1,7 @@
 *{
     padding: 0;
     margin: 0;
-    text-decoration: none;
+    text-decoration:none;
     box-sizing: border-box; 
     font-family: 'Poppins', sans-serif;
 }
@@ -37,7 +37,7 @@ header h1{
 header nav a{
     color: white;
     font-size: 25px;
-    padding-bottom: 0px;
+    padding-bottom: px;
     
 }
 header nav .active,
@@ -50,4 +50,17 @@ header nav a:hover{
     font-size: 26px;
     width: 80%;
     color: #999999;
+}
+.btn{
+    position: relative;
+    color: white;
+    margin-left: 15px;
+    padding: 10px 10px;
+    font-size: 22px;
+    border: 2px solid #de12d0;
+    border-radius: 5px;
+}
+.rm{
+    padding: 20px 20px;
+    height: 350px;
 }
