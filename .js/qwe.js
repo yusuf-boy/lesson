@@ -58,3 +58,4 @@ function doc(name, years, color, food){
 }
 doc("nashim", " 4", "color black", " go'sh")
 doc("riki", " 8", "color chocolate", " go'sh")
+
