@@ -7,7 +7,7 @@
 // var name = "Ali";
 // var years = 2;
 // const country= " O'zbekiston";
-var array = [1,2,3,4, [1.2 ,2, 3, ['dsa', true, [1] ] ] ];
+// var array = [1,2,3,4, [1.2 ,2, 3, ['dsa', true, [1] ] ] ];
 // array[4][3][2][0]
 
 // var isBoy = true;
@@ -49,12 +49,62 @@ var array = [1,2,3,4, [1.2 ,2, 3, ['dsa', true, [1] ] ] ];
 // Hello('Yusuf','23')
 
 
+
+
+
 // najim
 // riki
+// function doc(name, years, color, food){
 
-function doc(name, years, color, food){
+//     console.log("name: " + name + years + " years " + color + " favorite food" + food);
+// }
+// doc("nashim", " 4", "color black", " go'sh")
+// doc("riki", " 8", "color chocolate", " go'sh")
 
-    console.log("name: " + name + years + " years " + color + " favorite food" + food);
+
+
+
+
+// function factorial(n) {
+//     if (n <=1 ) return 1;
+//     return n * factorial(n-1);
+// }
+// console.log(factorial(5));
+
+
+
+
+// let student = {
+//     name: "ali",
+//     age: 21,
+//     greet() {
+//         return `Hello, my name is ${this.name}`;
+//     } 
+// };
+// console.log(student.greet());
+
+
+
+
+
+function outer() {
+    let count = 0;
+    return function() {
+        count++;
+        console.log(`Count:${count}`);
+    };
 }
-doc("nashim", " 4", "color black", " go'sh")
-doc("riki", " 8", "color chocolate", " go'sh")
+let counter = outer();
+counter();
+counter();
+
+
+
+
+
+
+// let nums = [1, 2, 3];
+// let newNums = [...nums, 4, 5];
+// console.log(newNums);
+
+

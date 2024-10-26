@@ -27,23 +27,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        input:focus {
+          background-color: yellow;
+        }
+        </style>
 </head>
-<body>
+<body class="input:focus">
     <form action="">
-        <h4>Ismingizni kiriting</h4>
-    <input type="name"name = "daf">
-    <h4>telefon ragamingizni kiriting</h4>
-    <input type="tel" name="nomer" >
-    <h4>elektiron poshtazini kiriting</h4>
-    <input type="email" name="">
-    <h4>tuqilgan kuningizni kiriting</h4>
-    <input type="radio" name="tuqilgan kun"><span>23</span>
-    <input type="radio" name="tuqilgan kun"><span>24</span>
-    <input type="radio" name="tuqilgan kun"><span>25</span>
-    <h4>O'zingiz haqida malumot</h4>
-    <textarea name="sd"width = "200px"></textarea>
+        <label for="name">Enter your name:</label><br>
+    <input type="name"name = "daf"><br><br>
+    <label for="name">Enter your phone ragam:</label><br>
+    <input type="tel" name="nomer" ><br><br>
+    <label for="name">el.poshta</label><br>
+    <input type="email" name=""><br><br>
+    <label for="name">Tuqilgan kuningizni kiriting:</label><br>
+    <input type="radio" name="tuqilgan kun"><span>23</span><br>
+    <input type="radio" name="tuqilgan kun"><span>24</span><br>
+    <input type="radio" name="tuqilgan kun"><span>25</span><br><br>
+    <label for="name">Information about yourself:</label><br>
+    <textarea name="sd"width = "200px"></textarea><br>
     <br>
-    <button name="btn">tugma</button>
+    <button name="btn">button</button><br><br>
     </form>
 </body>
 </html>
