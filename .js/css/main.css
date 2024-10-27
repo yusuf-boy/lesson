@@ -1,0 +1,116 @@
+.body{
+    padding: 0;
+    margin: 5;
+    text-decoration:none;
+    box-sizing: border-box; 
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about {
+    background-color: violet;
+    color: blue;
+}
+.long-text{
+    background: #000;
+    color: white;
+}
+.short-text{
+    background-color: chartreuse;
+}
+.box1{
+    width: 100px;
+    height: 100px;
+    background-color: #643535;
+    border-top-left-radius: 50px;
+}
+.box2{
+    top: 100px;
+    position: relative;
+    margin: 0;  
+}
+.box2::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+}
+
+.box2::before {
+    bottom: 100%;
+    border-bottom: 100px solid #2600ff;
+}
+.box3{
+    width: 100px;
+    height: 100px;
+    background-color: #c43c86;
+    justify-content: center;
+    border-top-right-radius: 50px;
+}
+.box4 {
+    width: 100px;
+    height: 55px;
+    background-color: #4CAF50;
+    position: relative;
+    margin: 0;
+    transition: background-color 0.3 easa;
+}
+
+.box4::before,
+.box4::after{
+    content: "";
+    position: absolute;
+    width: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+}
+
+.box4::before {
+    bottom: 100%;
+    border-bottom: 28px solid #4CAF50;
+}
+
+.box4::after {
+    top: 100%;
+    width: 0;
+    border-top: 28px solid #4CAF50;
+}
+.box4:hover {
+    background-color: blue; 
+}
+
+.box4:hover::before {
+    border-bottom-color: blue;
+}
+
+.box4:hover::after {
+    border-top-color: blue; 
+}
+.box5{
+    width: 100px;
+    height: 100px;
+    background-color: #863e3e;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px ;
+}
+.box-container{
+    height: 10px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.box-container1,
+input:focus{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+input:focus{
+    background-color: chocolate;
+}
+input:focus {
+background-color: yellow;
+}
