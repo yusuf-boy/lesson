@@ -1,3 +1,10 @@
+// main.js
+import my from './myFunctions.js';
+
+const myMethod = my.outer;
+var qwert = myMethod()
+qwert()
+
 // int
 // flost
 // string
@@ -87,16 +94,16 @@
 
 
 
-function outer() {
-    let count = 0;
-    return function() {
-        count++;
-        console.log(`Count:${count}`);
-    };
-}
-let counter = outer();
-counter();
-counter();
+// function outer() {
+//     let count = 0;
+//     return function() {
+//         count++;
+//         console.log(`Count:${count}`);
+//     };
+// }
+// let counter = outer();
+// counter();
+// counter();
 
 
 
