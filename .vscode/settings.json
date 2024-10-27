@@ -1,7 +1,0 @@
-{
-    "python.testing.pytestArgs": [
-        "3 chi cod"
-    ],
-    "python.testing.unittestEnabled": false,
-    "python.testing.pytestEnabled": true
-}
