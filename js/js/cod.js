@@ -45,7 +45,7 @@ sayHello('behruz', 'tong')
 
 
 
-// //functions vs methods
+//functions vs methods
 
 // const ism = 'ahror'
 
@@ -64,4 +64,67 @@ sayHello('behruz', 'tong')
 
 
 
-//Tahlil
+// //Tahlil
+// function calcArea(birhtYear, firstName) {
+//     const age = 2022 - birhtYear
+//     console.log(`${firstName} siz ${age} yoshga kirdiz`)
+//     return age
+// }
+// const age = calcArea(1998, 'Akhror')
+
+
+
+
+
+// //callback function
+// const myFunc = (callbackFunc) => {
+//     let number = 50
+//     callbackFunc(number)
+// }
+
+// myFunc(function(value) {
+//     console.log(value)
+// })
+
+
+
+
+
+// const names = ['ahror', 'sardor', 'doniyor', 'farxod']
+// const newIsms = []
+
+// names.forEach(function(name) {
+//     const newIsm = name.charAt().toUpperCase() + name.slice(1).toLowerCase() + 'bek'
+//     newIsms.push(newIsm)
+//     // console.log(neWIsm)
+// }) 
+
+// console.log(newIsms)
+
+// // for (let i = 0; i < name.length; i++) {
+// //     console.log(name[i])
+// // }
+
+
+
+
+//objecte
+const user = {
+    name: 'Ahror',
+    age: 23,
+    email: 'avliyoqulovyusuf@gmail.com',
+    location: "buxoro",
+    lang: ['uzbek', 'russin', 'english'],
+}
+
+console.log(user)
+console.log(user.location)
+
+user.age = 24
+console.log(user.age)
+
+console.log(user['location'])
+user['name'] = 'doniyor'
+console.log(user['name'])
+
+console.log(typeof user)
