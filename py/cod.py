@@ -52,5 +52,18 @@ print(natija)
 
 
 import math
-print(math.sqrt(16))  # 4.0
+print(math.sqrt(16))
 print(math.pi)
+
+
+
+# random moduli - tasodifiy sonlar
+import random
+print(random.randint(1, 10))
+
+
+
+from math import sqrt
+print(sqrt(25))
+
+
