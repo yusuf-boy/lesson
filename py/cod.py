@@ -41,8 +41,16 @@ for i in range(5):
     print(i)
 
 
+# qaytaruvchi funksiya
+def kvadrat(son):
+    return son ** 2
+
+natija = kvadrat(4)  # natija = 16
+print(natija)
 
 
 
 
-
+import math
+print(math.sqrt(16))  # 4.0
+print(math.pi)
