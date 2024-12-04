@@ -7,4 +7,4 @@ function outer() {
 } 
 export default {
     outer,
-}
+} 

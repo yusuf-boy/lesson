@@ -1,8 +1,8 @@
-const sayHello = function (name, day = 'kech') {
-    console.log(`Hayrili ${day} ${name}`)
-}
+// const sayHello = function (name, day = 'kech') {
+//     console.log(`Hayrili ${day} ${name}`)
+// }
 
-sayHello('behruz', 'tong')
+// sayHello('behruz', 'tong')
 
 
 
@@ -90,41 +90,42 @@ sayHello('behruz', 'tong')
 
 
 
-// const names = ['ahror', 'sardor', 'doniyor', 'farxod']
-// const newIsms = []
+//  const newIsms = []
 
 // names.forEach(function(name) {
 //     const newIsm = name.charAt().toUpperCase() + name.slice(1).toLowerCase() + 'bek'
 //     newIsms.push(newIsm)
 //     // console.log(neWIsm)
-// }) 
-
+// })  
 // console.log(newIsms)
 
-// // for (let i = 0; i < name.length; i++) {
-// //     console.log(name[i])
-// // }
+// for (let i = 0; i < name.length; i++) {
+//     console.log(name[i])
+// }
 
 
+  
+// //objecte
+// const user = {
+//     name: 'yusuf',
+//     age: 23,
+//     email: 'avliyoqulovyusuf@gmail.com',
+//     location: "buxoro",
+//     lang: ['uzbek', 'russin', 'english'],
+// }
 
+// console.log(user)
+// console.log(user.location)
 
-//objecte
-const user = {
-    name: 'Ahror',
-    age: 23,
-    email: 'avliyoqulovyusuf@gmail.com',
-    location: "buxoro",
-    lang: ['uzbek', 'russin', 'english'],
-}
+// user.age = 24
+// user.email = 'avliyoqulovyusufbek12@gmail.com'
+// user.name = 'bek'
+// console.log(user.age)
+// console.log(user.email)
+// console.log(user.name)
 
-console.log(user)
-console.log(user.location)
+// console.log(user['location'])
+// user['name'] = 'doniyor'
+// console.log(user['name'])
 
-user.age = 24
-console.log(user.age)
-
-console.log(user['location'])
-user['name'] = 'doniyor'
-console.log(user['name'])
-
-console.log(typeof user)
+// console.log(typeof user)

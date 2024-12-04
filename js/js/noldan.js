@@ -9,13 +9,40 @@ const movies = [
 ]
 
 movies.forEach((movies)=> {
-    // BU BITA TATOR BOLIB CHIGADI
+    // // BU BITA TATOR BOLIB CHIGADI
     // console.log(movies.name)
     // console.log(movies.likes)
 
-    //BU ESA HAMMASI BITA SOZ BOLIB CHIGADI
-    // const result = `Kino nomi: ${movies.name}, Likes: ${movies.likes}` 
-    // console.log(result);
+    // BU ESA HAMMASI BITA SOZ BOLIB CHIGADI
+    const result = `Kino nomi: ${movies.name}, Likes: ${movies.likes}` 
+    console.log(result);
 })
 
+// Math, Math.PI, Math.E
+console.log(Math)
+console.log(Math.PI)
+console.log(Math.E)
 
+const area = 7.6
+
+// sonning eng yaqin butun qismga yaxlitlaydi
+// Math.round()
+console.log(Math.round(area))
+
+// eng yaqin kichik butun qismga qarab yaxlitlaydi
+//Math.floor()
+console.log(Math.floor(area))
+
+// eng yaqqin kattasiga butun qismga qarab yaxlitlaydi
+// Math.ceil()
+console.log(Math.ceil(area))
+
+// sonning faqat butun qismini qaytaradi 
+// Math.trunc()
+console.log(Math.trunc(area))
+
+// 0 va 1 oralig'ida ixtiyoriy raqamlarni qaytaradi
+// Math.random()
+// console.log(Math.random(area))
+const randomNumber = Math.trunc(Math.random() * 10) + 1 
+console.log(randomNumber)
