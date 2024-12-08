@@ -80,3 +80,32 @@ console.log(LowerCaseText);
 var text = "Hello, world!";
 var slicedText = text.slice(0, 5);
 consoles.log(slicedText);
+
+
+// replace soz orniga boshga zor qoyish 
+var text = "Hello, world!";
+var replaceText = text.replace("world", "Universe");
+console.log(replaceText);
+
+
+
+// split
+var csvData = "John,Doe,30";
+var daraArray = csvData.split(",");
+console.log(daraArray);
+
+
+
+// trim()
+var paddedText = "     Hello, World!             ";
+var trimmedText = paddedText.trim();
+console.log(trimmedText);
+
+
+
+// startsWith() endsWith()
+var text = "Hello, world!";
+var startsWithHello = text.startsWith("Hello");
+var endsWithWorld = text.endsWith("world");
+console.log(startsWithHello+<br>);
+console.log(endsWithWorld);
