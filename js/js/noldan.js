@@ -109,3 +109,17 @@ let startsWithHello = text.startsWith("Hello");
 let endsWithWorld = text.endsWith("world");
 console.log(startsWithHello+<br>);
 console.log(endsWithWorld);
+
+
+// WeakSet
+const myWS = new WeakSet();
+const obj1 = { name: "John" };
+const obj2 = { name: "Jane" };
+
+
+myMS.add(obj1);
+myMS.add(obj2);
+
+console.log(myMS.has(obj1)+ "<br>");
+console.log(myMA.has(obj2)+ "<br>");
+console.log(myMS.has({ name: "john"}));
