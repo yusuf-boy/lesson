@@ -46,3 +46,37 @@ console.log(Math.trunc(area))
 // console.log(Math.random(area))
 const randomNumber = Math.trunc(Math.random() * 10) + 1 
 console.log(randomNumber)
+
+
+//bunda charAt() sozdagi qaysi xarif kerak bolsa shuning sonini kiritiladi
+var text = "Hello, world!"
+var character = text.charAt(7);
+console.log(character);
+
+
+
+// concat bu ikkita sizning ulashda ishlatiladi 
+var firstName = "John";
+var lastName = "Doe";
+var fullName = firstName.concat(" " lastName);
+console.log(fullName);
+
+
+// indexOf bu shungacha kelgan sozni sonini aytadi
+var text = "Hello, World!";
+var index = text.indexOf("World");
+console.log(index);
+
+
+// sozlarni toLowerCase hammasini kichik qiladi, buesa toUpperCase hammasini kata qiladi
+var text = "Hello, world!";
+var UpperCaseText = text.toUpperCase();
+var LowerCaseText = text.toLowerCase();
+console.log(UpperCaseText+"<br>");
+console.log(LowerCaseText);
+
+
+// slice bu esa Hello shunda 0, 5 bolsa shuni chiqoradi
+var text = "Hello, world!";
+var slicedText = text.slice(0, 5);
+consoles.log(slicedText);
