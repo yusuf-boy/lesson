@@ -49,63 +49,63 @@ console.log(randomNumber)
 
 
 //bunda charAt() sozdagi qaysi xarif kerak bolsa shuning sonini kiritiladi
-var text = "Hello, world!"
-var character = text.charAt(7);
+let text = "Hello, world!"
+let character = text.charAt(7);
 console.log(character);
 
 
 
 // concat bu ikkita sizning ulashda ishlatiladi 
-var firstName = "John";
-var lastName = "Doe";
-var fullName = firstName.concat(" " lastName);
+let firstName = "John";
+let lastName = "Doe";
+let fullName = firstName.concat(" " lastName);
 console.log(fullName);
 
 
 // indexOf bu shungacha kelgan sozni sonini aytadi
-var text = "Hello, World!";
-var index = text.indexOf("World");
+let text = "Hello, World!";
+let index = text.indexOf("World");
 console.log(index);
 
 
 // sozlarni toLowerCase hammasini kichik qiladi, buesa toUpperCase hammasini kata qiladi
-var text = "Hello, world!";
-var UpperCaseText = text.toUpperCase();
-var LowerCaseText = text.toLowerCase();
+let text = "Hello, world!";
+let UpperCaseText = text.toUpperCase();
+let LowerCaseText = text.toLowerCase();
 console.log(UpperCaseText+"<br>");
 console.log(LowerCaseText);
 
 
 // slice bu esa Hello shunda 0, 5 bolsa shuni chiqoradi
-var text = "Hello, world!";
-var slicedText = text.slice(0, 5);
+let text = "Hello, world!";
+let slicedText = text.slice(0, 5);
 consoles.log(slicedText);
 
 
 // replace soz orniga boshga zor qoyish 
-var text = "Hello, world!";
-var replaceText = text.replace("world", "Universe");
+let text = "Hello, world!";
+let replaceText = text.replace("world", "Universe");
 console.log(replaceText);
 
 
 
 // split
-var csvData = "John,Doe,30";
-var daraArray = csvData.split(",");
+let csvData = "John,Doe,30";
+let daraArray = csvData.split(",");
 console.log(daraArray);
 
 
 
 // trim()
-var paddedText = "     Hello, World!             ";
-var trimmedText = paddedText.trim();
+let paddedText = "     Hello, World!             ";
+let trimmedText = paddedText.trim();
 console.log(trimmedText);
 
 
 
 // startsWith() endsWith()
-var text = "Hello, world!";
-var startsWithHello = text.startsWith("Hello");
-var endsWithWorld = text.endsWith("world");
+let text = "Hello, world!";
+let startsWithHello = text.startsWith("Hello");
+let endsWithWorld = text.endsWith("world");
 console.log(startsWithHello+<br>);
 console.log(endsWithWorld);
