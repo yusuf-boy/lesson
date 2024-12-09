@@ -112,13 +112,13 @@ console.log(endsWithWorld);
 
 
 // WeakSet
-const myWS = new WeakSet();
+const myWeakSet = new WeakSet();
 const obj1 = { name: "John" };
 const obj2 = { name: "Jane" };
 
-myMS.add(obj1);
-myMS.add(obj2);
+myWeakSet.add(obj1);
+myWeakSet.add(obj2);
 
-console.log(myMS.has(obj1)+ "<br>");
-console.log(myMA.has(obj2)+ "<br>");
-console.log(myMS.has({ name: "john"}));
+console.log(myWeakSet.has(obj1)+ "<br>");
+console.log(myWeakSet.has(obj2)+ "<br>");
+console.log(myWeakSet.has({ name: "john"}));
