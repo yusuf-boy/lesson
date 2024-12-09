@@ -116,7 +116,6 @@ const myWS = new WeakSet();
 const obj1 = { name: "John" };
 const obj2 = { name: "Jane" };
 
-
 myMS.add(obj1);
 myMS.add(obj2);
 
