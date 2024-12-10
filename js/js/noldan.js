@@ -46,3 +46,20 @@ console.log(Math.trunc(area))
 // console.log(Math.random(area))
 const randomNumber = Math.trunc(Math.random() * 10) + 1 
 console.log(randomNumber)
+
+/*--- dom selectors ---*/
+// 1)getElementsByTagName  (xammasini olib keldip aytadi)
+const listItem = document.getElementsByTagName('li')
+// console.log(listItem[1])
+// listItem.forEach((li) => {
+//     console.log(li)
+// })        //listItem BU ERREYGA OXSHAGANI BILAN ERREYMANS SHU UCHUN forEachni oqimayapdi
+
+
+// 2)getElementsByClassName
+
+
+// 3)getElementsById
+
+
+// 4)querySelector / querySelectorAll\

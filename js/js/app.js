@@ -33,4 +33,3 @@ const myArray = [[false, true], [1, 2], 99, 'good']
     }
   })
   console.log(newData)
-  
