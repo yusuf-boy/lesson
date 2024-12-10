@@ -47,19 +47,78 @@ console.log(Math.trunc(area))
 const randomNumber = Math.trunc(Math.random() * 10) + 1 
 console.log(randomNumber)
 
-/*--- dom selectors ---*/
-// 1)getElementsByTagName  (xammasini olib keldip aytadi)
-const listItem = document.getElementsByTagName('li')
-// console.log(listItem[1])
-// listItem.forEach((li) => {
-//     console.log(li)
-// })        //listItem BU ERREYGA OXSHAGANI BILAN ERREYMANS SHU UCHUN forEachni oqimayapdi
+
+//bunda charAt() sozdagi qaysi xarif kerak bolsa shuning sonini kiritiladi
+let text = "Hello, world!"
+let character = text.charAt(7);
+console.log(character);
 
 
-// 2)getElementsByClassName
+
+// concat bu ikkita sizning ulashda ishlatiladi 
+let firstName = "John";
+let lastName = "Doe";
+let fullName = firstName.concat(" " lastName);
+console.log(fullName);
 
 
-// 3)getElementsById
+// indexOf bu shungacha kelgan sozni sonini aytadi
+let text = "Hello, World!";
+let index = text.indexOf("World");
+console.log(index);
 
 
-// 4)querySelector / querySelectorAll\
+// sozlarni toLowerCase hammasini kichik qiladi, buesa toUpperCase hammasini kata qiladi
+let text = "Hello, world!";
+let UpperCaseText = text.toUpperCase();
+let LowerCaseText = text.toLowerCase();
+console.log(UpperCaseText+"<br>");
+console.log(LowerCaseText);
+
+
+// slice bu esa Hello shunda 0, 5 bolsa shuni chiqoradi
+let text = "Hello, world!";
+let slicedText = text.slice(0, 5);
+consoles.log(slicedText);
+
+
+// replace soz orniga boshga zor qoyish 
+let text = "Hello, world!";
+let replaceText = text.replace("world", "Universe");
+console.log(replaceText);
+
+
+
+// split
+let csvData = "John,Doe,30";
+let daraArray = csvData.split(",");
+console.log(daraArray);
+
+
+
+// trim()
+let paddedText = "     Hello, World!             ";
+let trimmedText = paddedText.trim();
+console.log(trimmedText);
+
+
+
+// startsWith() endsWith()
+let text = "Hello, world!";
+let startsWithHello = text.startsWith("Hello");
+let endsWithWorld = text.endsWith("world");
+console.log(startsWithHello+<br>);
+console.log(endsWithWorld);
+
+
+// WeakSet
+const myWeakSet = new WeakSet();
+const obj1 = { name: "John" };
+const obj2 = { name: "Jane" };
+
+myWeakSet.add(obj1);
+myWeakSet.add(obj2);
+
+console.log(myWeakSet.has(obj1)+ "<br>");
+console.log(myWeakSet.has(obj2)+ "<br>");
+console.log(myWeakSet.has({ name: "john"}));
