@@ -49,8 +49,8 @@ console.log(randomNumber)
 
 
 //bunda charAt() sozdagi qaysi xarif kerak bolsa shuning sonini kiritiladi
-let text = "Hello, world!"
-let character = text.charAt(7);
+let text1 = "Hello, world!"
+let character = text1.charAt(7);
 console.log(character);
 
 
@@ -58,33 +58,33 @@ console.log(character);
 // concat bu ikkita sizning ulashda ishlatiladi 
 let firstName = "John";
 let lastName = "Doe";
-let fullName = firstName.concat(" " lastName);
+let fullName = firstName.concat(" ",lastName);
 console.log(fullName);
 
 
 // indexOf bu shungacha kelgan sozni sonini aytadi
-let text = "Hello, World!";
-let index = text.indexOf("World");
+let text2 = "Hello, World!";
+let index = text2.indexOf("World");
 console.log(index);
 
 
 // sozlarni toLowerCase hammasini kichik qiladi, buesa toUpperCase hammasini kata qiladi
-let text = "Hello, world!";
-let UpperCaseText = text.toUpperCase();
-let LowerCaseText = text.toLowerCase();
+let text3 = "Hello, world!";
+let UpperCaseText = text3.toUpperCase();
+let LowerCaseText = text3.toLowerCase();
 console.log(UpperCaseText+"<br>");
 console.log(LowerCaseText);
 
 
-// slice bu esa Hello shunda 0, 5 bolsa shuni chiqoradi
-let text = "Hello, world!";
-let slicedText = text.slice(0, 5);
-consoles.log(slicedText);
+// // slice bu esa Hello shunda 0, 5 bolsa shuni chiqoradi
+// let text = "Hello, world!";
+// let slicedText = text.slice(0, 5);
+// consoles.log(slicedText);
 
 
 // replace soz orniga boshga zor qoyish 
-let text = "Hello, world!";
-let replaceText = text.replace("world", "Universe");
+let nomi = "Hello, world!";
+let replaceText = nomi.replace("world", "Universe");
 console.log(replaceText);
 
 
@@ -104,10 +104,10 @@ console.log(trimmedText);
 
 
 // startsWith() endsWith()
-let text = "Hello, world!";
-let startsWithHello = text.startsWith("Hello");
-let endsWithWorld = text.endsWith("world");
-console.log(startsWithHello+<br>);
+let text7 = "Hello, world!";
+let startsWithHello = text7.startsWith("Hello");
+let endsWithWorld = text7.endsWith("world");
+console.log(startsWithHello+"<br>");
 console.log(endsWithWorld);
 
 
@@ -122,3 +122,50 @@ myWeakSet.add(obj2);
 console.log(myWeakSet.has(obj1)+ "<br>");
 console.log(myWeakSet.has(obj2)+ "<br>");
 console.log(myWeakSet.has({ name: "john"}));
+
+
+// // js DOM BUNI KORISH KERAK XATOSI BOR
+// const text6 = document.getElementById('mytext6');
+// text6.addEventListener('click', function() {
+//     alert('text6 clicked!');
+// });
+
+
+/// function
+function salomBer(ism) {
+    console.log("Salom, " + ism + "!");
+}
+salomBer("Ali");
+
+
+// /// Array bilan ishlash
+// let sonlar = [1, 2, 3, 4, 5];
+// for (let son of sonlar) {
+//     console.log(son * 2);
+// }
+
+
+/// Obyekt bilan ishlash
+let talaba = {
+    name: "Ali",
+    yosh: 20,
+    boho: "A'lo"
+};
+console.log("Talabaning ismi:", talaba.name);
+
+
+/// (map, filter, reduce)
+let sonlar = [1, 2, 3, 4, 5];
+let kvadratlar = sonlar.map(son => son * son);
+let kvadratlar2 = sonlar.filter(son => son );
+let kvadratlar3 = sonlar.reduce(son => son);
+console.log(kvadratlar);
+console.log(kvadratlar2);
+console.log(kvadratlar3);
+
+
+/// Asinxron dasturlash (setTimeout, Promise, async/await)
+///Vaqt kechikishi yoki ma'lumotlarni serverdan olishni boshqarish:
+setTimeout(() => {
+    console.log("3 soniyadan so'ng chiqdi!");
+}, 3000);
