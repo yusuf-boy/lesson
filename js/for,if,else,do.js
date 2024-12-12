@@ -195,8 +195,8 @@ function cyclicSum(numbers, step) {
 let numbers = [1, 2, 3, 4, 5];
 let step = 2;
 
-let result = cyclicSum(numbers, step);
-console.log("sunma: " + result);
+let result = cyclicSum(numbers, +step);
+console.log("sunma: ", result);
 
 
 /// Чуқур массивни фильтр қилиш Функция deepFilter(arr, condition) ёзинг. 
