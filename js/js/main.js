@@ -11,21 +11,21 @@
 // boolean
 // array
 
-// var name = "Ali";
-// var years = 2;
-// const country= " O'zbekiston";
-// var array = [1,2,3,4, [1.2 ,2, 3, ['dsa', true, [1] ] ] ];
-// array[4][3][2][0]
+var name = "Ali ";
+var years = 2;
+const country = " O'zbekiston";
+var array = [1, 2, 3, 4, [1.2, 2, 3, ['dsa', true, [1] ] ] ];
+array[4][3][2][0]
 
-// var isBoy = true;
+var isBoy = true;
 
-// var result = name + years + country;
+var result = name + years + country;
+
+console.log(result);
+console.log(array);
 
 
-// console.log(result);
-
-// var a = 10 + 5;
-
+// var a = 10 + 5
 // if (years >= 18) {
 //     console.log("Siz kattasiz. ");
 // } else {

@@ -124,22 +124,109 @@ switch (baho) {
 // let i = 0;
 
 // for (i = 0; i < 3; i++) { 
-//   alert(i); // 0, 1, 2
+//   alert(i); // 0, 1, 2s
 // }
 
 // alert(i);
 
 
-let sum = 0;
+// let sum = 0;
 
-while (true) {
+// while (true) {
 
-  let value = +prompt("Введите число", '');
+//   let value = +prompt("Введите число", '');
 
-  if (!value) break; // (*)
+//   if (!value) break; // (*)
 
-  sum += value;
+//   sum += value;
 
+// }
+// alert( 'Сумма: ' + sum );
+
+
+let person = new Object() ;
+person.name = "stone";
+person.age = 28;
+console.log(person["name"]);
+ 
+// var person = {
+//     name : "stone",
+//     age : 28
+// };
+// console.log(person.name)
+
+
+//Фақат мусбат сонларнинг квадратларини қайтариш Функция positiveSquare(numbers) ёзинг. 
+//У массивни қабул қилиб, фақат мусбат сонларнинг квадратларини қайтариши керак.
+// function positiveSquare(numbers) {
+//     return number
+//     .filter(num => num > 0)
+//     .map(num => num * num)
+// }
+// const numbers = [-1, -3, 0, 1, 2, 3,];
+// const result = positiveSquare(numbers);
+// console.log(result);
+
+
+// Лёгкие: Кўп сонларнинг умумий қийматини қўшиш
+// Функция sumMultipleNumbers(...numbers) ёзинг. 
+// У бир нечта сонни қабул қилиб, уларнинг умумий қийматини қайтариши керак.
+// function sumMultipleNumbers(...numbers) {
+//     return number
+//     .map(num => num += num)
+// }
+// const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+// const result = sumMultipleNumbers(numbers);
+// console.log(result);
+
+
+/// Сонларнинг қўшилишини даврийлик билан ҳисоблаш
+//Функция cyclicSum(numbers, step) ёзинг. 
+//У массив ва қадамни (step) қабул қилиб, массив элементларини бериладиган қадам билан қўшиш керак. 
+//Масалан, [1, 2, 3, 4, 5] ва қадам = 2 учун, натижа 1 + 3 + 5 = 9 бўлади.
+function cyclicSum(numbers, step) {
+    let sum = 0;
+    
+    for (let i = 0; i < numbers.length; i += step) {
+        sum += numbers[i];
+    }
+    return sum;
 }
-alert( 'Сумма: ' + sum );
+let numbers = [1, 2, 3, 4, 5];
+let step = 2;
 
+let result = cyclicSum(numbers, step);
+console.log("sunma: " + result);
+
+
+/// Чуқур массивни фильтр қилиш Функция deepFilter(arr, condition) ёзинг. 
+//У чуқур массивни (массив ичида массив) ва шартни қабул қилиб, 
+// шартга мос келадиган элементларни қайтаради.
+function  deepFilter(arr, condition) {
+    const result = [];
+
+    for (const item of arr) { // item bu massiv ichidagi har bir elementni ifodalaydigan o'zgaruvchi bo'lib, u for...of tsiklida ishlatiladi. Har safar tsikl ishlaganda,
+        // massivning keyingi elementi item ga o‘tkaziladi va u ustida ishlash amalga oshiriladi.
+        if (Array.isArray(item)) {
+            const filtered = deepFilter(item, condition);
+            if (filtered.length > 0) { // .length uning ichidagi elemetlarni qaytaradi
+                result.push(filtered);
+            }
+        }else if (condition(item)) {
+            result.push(item);
+        }
+    }
+    return result;
+}
+const arr = [1, [2, [3, 4], 5], 7];
+const condition = x => x = 1;
+const filteredArr = deepFilter(arr, condition);
+console.log(filteredArr); 
+
+
+/// Массивнинг ўртача қийматини топиш Функция averageArray(numbers) ёзинг. 
+// У массивни қабул қилиб, ундаги барча элементларнинг ўртача қийматини қайтариши керак.
+function averageArray(numbers) {
+    return number
+    .filter
+}
