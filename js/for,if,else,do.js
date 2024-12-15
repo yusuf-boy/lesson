@@ -227,6 +227,15 @@ console.log(filteredArr);
 /// Массивнинг ўртача қийматини топиш Функция averageArray(numbers) ёзинг. 
 // У массивни қабул қилиб, ундаги барча элементларнинг ўртача қийматини қайтариши керак.
 function averageArray(numbers) {
-    return number
-    .filter
+    let sum = 0;
+    
+    for (let i = 0; i < numbers.length; i += step) {
+        sum += numbers[i];
+    }
+    return sum;
 }
+let numbers = [1, 2, 3, 4, 5];
+let step = 1;
+
+let result = averageArray(numbers, +step);
+console.log("sunma: ", result);
