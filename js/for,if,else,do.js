@@ -172,8 +172,10 @@ console.log(person["name"]);
 // Функция sumMultipleNumbers(...numbers) ёзинг. 
 // У бир нечта сонни қабул қилиб, уларнинг умумий қийматини қайтариши керак.
 // function sumMultipleNumbers(...numbers) {
-//     return number
-//     .map(num => num += num)
+//     let a = 0
+//     numbers
+//     .map(num => a += num)
+//     return a
 // }
 // const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 // const result = sumMultipleNumbers(numbers);
@@ -228,14 +230,11 @@ console.log(filteredArr);
 // У массивни қабул қилиб, ундаги барча элементларнинг ўртача қийматини қайтариши керак.
 function averageArray(numbers) {
     let sum = 0;
+    numbers
+    .map(num => sum += num)
     
-    for (let i = 0; i < numbers.length; i += step) {
-        sum += numbers[i];
-    }
-    return sum;
+    return sum / numbers.length
 }
 let numbers = [1, 2, 3, 4, 5];
-let step = 1;
-
-let result = averageArray(numbers, +step);
+let result = averageArray(numbers, step);
 console.log("sunma: ", result);
