@@ -184,19 +184,19 @@ console.log(person["name"]);
 //Функция cyclicSum(numbers, step) ёзинг. 
 //У массив ва қадамни (step) қабул қилиб, массив элементларини бериладиган қадам билан қўшиш керак. 
 //Масалан, [1, 2, 3, 4, 5] ва қадам = 2 учун, натижа 1 + 3 + 5 = 9 бўлади.
-function cyclicSum(numbers, step) {
-    let sum = 0;
+// function cyclicSum(numbers, step) {
+//     let sum = 0;
     
-    for (let i = 0; i < numbers.length; i += step) {
-        sum += numbers[i];
-    }
-    return sum;
-}
-let numbers = [1, 2, 3, 4, 5];
-let step = 2;
+//     for (let i = 0; i < numbers.length; i += step) {
+//         sum += numbers[i];
+//     }
+//     return sum;
+// }
+// let numbers = [1, 2, 3, 4, 5];
+// let step = 1;
 
-let result = cyclicSum(numbers, +step);
-console.log("sunma: ", result);
+// let result = cyclicSum(numbers, +step);
+// console.log("sunma: ", result);
 
 
 /// Чуқур массивни фильтр қилиш Функция deepFilter(arr, condition) ёзинг. 
@@ -227,6 +227,15 @@ console.log(filteredArr);
 /// Массивнинг ўртача қийматини топиш Функция averageArray(numbers) ёзинг. 
 // У массивни қабул қилиб, ундаги барча элементларнинг ўртача қийматини қайтариши керак.
 function averageArray(numbers) {
-    return number
-    .filter
+    let sum = 0;
+    
+    for (let i = 0; i < numbers.length; i += step) {
+        sum += numbers[i];
+    }
+    return sum;
 }
+let numbers = [1, 2, 3, 4, 5];
+let step = 1;
+
+let result = averageArray(numbers, +step);
+console.log("sunma: ", result);
