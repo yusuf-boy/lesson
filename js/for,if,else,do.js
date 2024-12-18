@@ -156,10 +156,10 @@ console.log(person["name"]);
 // console.log(person.name)
 
 
-//Фақат мусбат сонларнинг квадратларини қайтариш Функция positiveSquare(numbers) ёзинг. 
-//У массивни қабул қилиб, фақат мусбат сонларнинг квадратларини қайтариши керак.
+// Фақат мусбат сонларнинг квадратларини қайтариш Функция positiveSquare(numbers) ёзинг. 
+// У массивни қабул қилиб, фақат мусбат сонларнинг квадратларини қайтариши керак.
 // function positiveSquare(numbers) {
-//     return number
+//     return numbers
 //     .filter(num => num > 0)
 //     .map(num => num * num)
 // }
@@ -171,9 +171,11 @@ console.log(person["name"]);
 // Лёгкие: Кўп сонларнинг умумий қийматини қўшиш
 // Функция sumMultipleNumbers(...numbers) ёзинг. 
 // У бир нечта сонни қабул қилиб, уларнинг умумий қийматини қайтариши керак.
-// function sumMultipleNumbers(...numbers) {
-//     return number
-//     .map(num => num += num)
+// function sumMultipleNumbers(numbers) {
+//     let a = 0
+//     numbers
+//     .map(num => a += num)
+//     return a
 // }
 // const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 // const result = sumMultipleNumbers(numbers);
@@ -193,49 +195,60 @@ console.log(person["name"]);
 //     return sum;
 // }
 // let numbers = [1, 2, 3, 4, 5];
-// let step = 1;
+// let step = 6;
 
-// let result = cyclicSum(numbers, +step);
+// let result = cyclicSum(numbers, step);
 // console.log("sunma: ", result);
 
 
 /// Чуқур массивни фильтр қилиш Функция deepFilter(arr, condition) ёзинг. 
 //У чуқур массивни (массив ичида массив) ва шартни қабул қилиб, 
 // шартга мос келадиган элементларни қайтаради.
-function  deepFilter(arr, condition) {
-    const result = [];
+// function  deepFilter(arr, condition) {
+//     const result = [];
 
-    for (const item of arr) { // item bu massiv ichidagi har bir elementni ifodalaydigan o'zgaruvchi bo'lib, u for...of tsiklida ishlatiladi. Har safar tsikl ishlaganda,
-        // massivning keyingi elementi item ga o‘tkaziladi va u ustida ishlash amalga oshiriladi.
-        if (Array.isArray(item)) {
-            const filtered = deepFilter(item, condition);
-            if (filtered.length > 0) { // .length uning ichidagi elemetlarni qaytaradi
-                result.push(filtered);
-            }
-        }else if (condition(item)) {
-            result.push(item);
-        }
-    }
-    return result;
-}
-const arr = [1, [2, [3, 4], 5], 7];
-const condition = x => x = 1;
-const filteredArr = deepFilter(arr, condition);
-console.log(filteredArr); 
+//     for (const item of arr) { // item bu massiv ichidagi har bir elementni ifodalaydigan o'zgaruvchi bo'lib, u for...of tsiklida ishlatiladi. Har safar tsikl ishlaganda,
+//         // massivning keyingi elementi item ga o‘tkaziladi va u ustida ishlash amalga oshiriladi.
+//         if (Array.isArray(item)) {
+//             const filtered = deepFilter(item, condition);
+//             if (filtered.length > 0) { // .length uning ichidagi elemetlarni qaytaradi
+//                 result.push(filtered);
+//             }
+//         }else if (condition(item)) {
+//             result.push(item);
+//         }
+//     }
+//     return result;
+// }
+// const arr = [1, [2, [3, 4], 5], 7];
+// const condition = x => x = 2;
+// const filteredArr = deepFilter(arr, condition);
+// console.log(filteredArr); 
 
 
 /// Массивнинг ўртача қийматини топиш Функция averageArray(numbers) ёзинг. 
 // У массивни қабул қилиб, ундаги барча элементларнинг ўртача қийматини қайтариши керак.
 function averageArray(numbers) {
-    let sum = 0;
+    let sum = 0
+    numbers
+    .map(num => sum += num)
     
-    for (let i = 0; i < numbers.length; i += step) {
-        sum += numbers[i];
-    }
-    return sum;
+    return sum/numbers.length
 }
 let numbers = [1, 2, 3, 4, 5];
-let step = 1;
-
-let result = averageArray(numbers, +step);
+let result = averageArray(numbers);
 console.log("sunma: ", result);
+
+
+// getAttribute va  setAttribute
+const link = document.querySelector('a')
+console.log(link.getAttribute('href'))
+
+link.setAttribute('href', 'https://www.yandex.ru')
+link.textContent = 'Go To Yandex Main Page'
+
+const text = document.querySelector('p')
+console.log(text.getAttribute('class'))
+text.setAttribute('class', 'success')
+
+text.setAttribute('style', 'color: red')

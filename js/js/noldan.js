@@ -169,3 +169,56 @@ console.log(kvadratlar3);
 setTimeout(() => {
     console.log("3 soniyadan so'ng chiqdi!");
 }, 3000);
+ 
+
+//
+// function sayHi() {
+//     alert('Привет');
+//   }
+  
+//  setTimeout(sayHi, 1000);
+
+
+// //
+// setTimeout("alert('Привет')", 1000);
+
+
+// ///
+// setTimeout(() => alert('Привет'), 1000);
+
+
+///
+// let timerId = setTimeout(() => alert("hech narsa bo'lmaydi"), 1000);
+// alert(timerId); // идентификатор таймера
+
+// clearTimeout(timerId);
+// alert(timerId);
+
+
+///
+// let i = 0;
+
+// setTimeout(() => alert(i), 100);
+
+// for(let j = 0; j < 100000000; j++) {
+//   i++;
+// }
+
+
+// /// cheksiz davom qiladi
+// let timerId = setTimeout(function tick() {
+//     alert('tick');
+//     timerId = setTimeout(tick, 2000); // (*)
+//   }, 2000);
+  
+
+
+///
+// let i = 1;
+// setTimeout(function run() {
+//   func(i);
+//   setTimeout(run, 100);
+// }, 100);
+
+
+///
