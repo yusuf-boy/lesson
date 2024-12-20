@@ -240,15 +240,24 @@ let result = averageArray(numbers);
 console.log("sunma: ", result);
 
 
-// getAttribute va  setAttribute
-const link = document.querySelector('a')
-console.log(link.getAttribute('href'))
+// // getAttribute() va  setAttribute()
+// const link = document.querySelector('a')
+// console.log(link.getAttribute('href'))
 
-link.setAttribute('href', 'https://www.yandex.ru')
-link.textContent = 'Go To Yandex Main Page'
+// link.setAttribute('href', 'https://www.yandex.ru')
+// link.textContent = 'Go To Yandex Main Page'
 
-const text = document.querySelector('p')
-console.log(text.getAttribute('class'))
-text.setAttribute('class', 'success')
+// const text = document.querySelector('p')
+// console.log(text.getAttribute('class'))
+// text.setAttribute('class', 'success')
 
-text.setAttribute('style', 'color: red')
+// text.setAttribute('style', 'color: red') 
+
+
+/// add & remove class
+const content = document.querySelector('p')
+
+console.log(content.classList)
+content.classList.add('success') // bu add nom qoshish
+content.classList.remove('success') // bu esa remove olib tashlash deyiladi
+content.classList.add('success')
