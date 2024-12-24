@@ -1,71 +1,71 @@
 // for, if, else bular if ros bolsa ishlatiladi. 
 //else yolgon bolsa ishlatiladi.
-//for har bir takrorlashda bajariladigan cod
-for (let i = 0; i < 5; i++) {
-    console.log("Bu " + i + "-marta bajarildi");
-}
+// //for har bir takrorlashda bajariladigan cod
+// for (let i = 0; i < 5; i++) {
+//     console.log("Bu " + i + "-marta bajarildi");
+// }
+
+// ///
+// let yosh = 20;
+
+// if (yosh >= 18) {
+//     console.log("Siz kattasiz!"); 
+// } else {
+//     console.log("Siz hali yoshligingiz uchun katta bo'lmagansiz."); 
+// }
+
+// ///
+// let baho1 = 75;
+
+// if (baho1 >= 90) {
+//     console.log("Ajoyib!"); 
+// } else if (baho1 >= 75) {
+//     console.log("Yaxshi!"); 
+// } else {
+//     console.log("Yaxshiroq harakat qiling!"); 
+// }
 
 ///
-let yosh = 20;
+// let number = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
-if (yosh >= 18) {
-    console.log("Siz kattasiz!"); 
-} else {
-    console.log("Siz hali yoshligingiz uchun katta bo'lmagansiz."); 
-}
+// let pairsons = [];
+// let toxons = [];
 
-///
-let baho1 = 75;
+// for (let i = 0; i < number.length; i++) {
+//     if (number[i] % 2 === 0) {
+//         pairsons.push(number[i]);
+//     } else {
+//         toxons.push(number[i]);
+//     }
+// }
 
-if (baho1 >= 90) {
-    console.log("Ajoyib!"); 
-} else if (baho1 >= 75) {
-    console.log("Yaxshi!"); 
-} else {
-    console.log("Yaxshiroq harakat qiling!"); 
-}
+// console.log("Juft sonlar:", pairsons);
+// console.log("Toq sonlar:", toxons);
 
-///
-let number = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+// ///
+// let matn = "JavaScript dasturlash tili juda kuchli va moslashuvchan.";
+// let harflarSoni = {};
+// let birinchia = null;
 
-let pairsons = [];
-let toxons = [];
+// for (let i = 0; i < matn.length; i++) { // stringning uzunligini (ya'ni undagi belgilar sonini)
 
-for (let i = 0; i < number.length; i++) {
-    if (number[i] % 2 === 0) {
-        pairsons.push(number[i]);
-    } else {
-        toxons.push(number[i]);
-    }
-}
-
-console.log("Juft sonlar:", pairsons);
-console.log("Toq sonlar:", toxons);
-
-///
-let matn = "JavaScript dasturlash tili juda kuchli va moslashuvchan.";
-let harflarSoni = {};
-let birinchia = null;
-
-for (let i = 0; i < matn.length; i++) { // stringning uzunligini (ya'ni undagi belgilar sonini)
-
-    let belgi = matn[i].toLowerCase(); 
+//     let belgi = matn[i].toLowerCase(); 
     
-    if (belgi >= 'a' && belgi <= 'z') {
-        if (harflarSoni[belgi]) {
-            harflarSoni[belgi]++;
-        } else {
-            harflarSoni[belgi] = 1;
-        }
-    }
-    if (belgi === "a") {
-        birinchia = belgi;
-        break;
-    }
-}
+//     if (belgi >= 'a' && belgi <= 'z') {
+//         if (harflarSoni[belgi]) {
+//             harflarSoni[belgi]++;
+//         } else {
+//             harflarSoni[belgi] = 1;
+//         }
+//     }
+//     if (belgi === "a") {
+//         birinchia = belgi;
+//         break;
+//     }
+// }
 
-console.log("Harflar soni:", harflarSoni);
-console.log("Matndagi birinchi 'a' harfi:", birinchia);
+// console.log("Harflar soni:", harflarSoni);
+// console.log("Matndagi birinchi 'a' harfi:", birinchia);
 
 // ///
 // let i = 0;
@@ -80,17 +80,17 @@ console.log("Matndagi birinchi 'a' harfi:", birinchia);
 // } while (i > 0);
 
 ///
-let baho = 4;
-switch (baho) {
-    case 5:
-        console.log("A'lo baho!");
-        break;
-    case 4:
-        console.log("Yaxshi baho!");
-        break;
-    default:
-        console.log("Harakat qilish kerak!");
-}
+// let baho = 4;
+// switch (baho) {
+//     case 5:
+//         console.log("A'lo baho!");
+//         break;
+//     case 4:
+//         console.log("Yaxshi baho!");
+//         break;
+//     default:
+//         console.log("Harakat qilish kerak!");
+// }
 
 
 // // while
@@ -144,10 +144,10 @@ switch (baho) {
 // alert( 'Сумма: ' + sum );
 
 
-let person = new Object() ;
-person.name = "stone";
-person.age = 28;
-console.log(person["name"]);
+// let person = new Object() ;
+// person.name = "stone";
+// person.age = 28;
+// console.log(person["name"]);
  
 // var person = {
 //     name : "stone",
@@ -228,16 +228,16 @@ console.log(person["name"]);
 
 /// Массивнинг ўртача қийматини топиш Функция averageArray(numbers) ёзинг. 
 // У массивни қабул қилиб, ундаги барча элементларнинг ўртача қийматини қайтариши керак.
-function averageArray(numbers) {
-    let sum = 0
-    numbers
-    .map(num => sum += num)
+// function averageArray(numbers) {
+//     let sum = 0
+//     numbers
+//     .map(num => sum += num)
     
-    return sum/numbers.length
-}
-let numbers = [1, 2, 3, 4, 5];
-let result = averageArray(numbers);
-console.log("sunma: ", result);
+//     return sum/numbers.length
+// }
+// let numbers = [1, 2, 3, 4, 5];
+// let result = averageArray(numbers);
+// console.log("sunma: ", result);
 
 
 // // getAttribute() va  setAttribute()
@@ -252,12 +252,3 @@ console.log("sunma: ", result);
 // text.setAttribute('class', 'success')
 
 // text.setAttribute('style', 'color: red') 
-
-
-/// add & remove class
-const content = document.querySelector('p')
-
-console.log(content.classList)
-content.classList.add('success') // bu add nom qoshish
-content.classList.remove('success') // bu esa remove olib tashlash deyiladi
-content.classList.add('success')
