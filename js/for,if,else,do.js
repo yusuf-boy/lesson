@@ -10,7 +10,7 @@
 
 // if (yosh >= 18) {
 //     console.log("Siz kattasiz!"); 
-// } else {
+// } else { 
 //     console.log("Siz hali yoshligingiz uchun katta bo'lmagansiz."); 
 // }
 
@@ -25,6 +25,7 @@
 //     console.log("Yaxshiroq harakat qiling!"); 
 // }
 
+
 ///
 // let number = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
@@ -32,15 +33,15 @@
 // let toxons = [];
 
 // for (let i = 0; i < number.length; i++) {
-//     if (number[i] % 2 === 0) {
+//     if (number[i] % 2 == 0) {
 //         pairsons.push(number[i]);
 //     } else {
 //         toxons.push(number[i]);
 //     }
 // }
-
 // console.log("Juft sonlar:", pairsons);
 // console.log("Toq sonlar:", toxons);
+
 
 // ///
 // let matn = "JavaScript dasturlash tili juda kuchli va moslashuvchan.";
@@ -58,7 +59,7 @@
 //             harflarSoni[belgi] = 1;
 //         }
 //     }
-//     if (belgi === "a") {
+//     if (belgi === "y") {
 //         birinchia = belgi;
 //         break;
 //     }
@@ -67,7 +68,7 @@
 // console.log("Harflar soni:", harflarSoni);
 // console.log("Matndagi birinchi 'a' harfi:", birinchia);
 
-// ///
+///
 // let i = 0;
 // while (i < 5) {
 //     console.log("i ning qiymati:", i);
@@ -93,13 +94,15 @@
 // }
 
 
-// // while
+// while
 // let i = 0; // bunda 0 ning orniga 3 qoysa 
-// while (i < 3) { // buyerga fagot i ozi bolsa
+// while (i < 3) { // buyerga fagot i o'zi bolsa
 //     alert( i );
 //     i++; // ++ ning orniga -- qoysa  /// NATICHA: 3 dan 1 boladi ///
 // }
-// //  BUNDAY HAM YOZSA HAM BOLADI
+
+///
+//  BUNDAY HAM YOZSA HAM BOLADI
 // let I = 3;
 // while (I) alert(I--);
 
@@ -124,12 +127,13 @@
 // let i = 0;
 
 // for (i = 0; i < 3; i++) { 
-//   alert(i); // 0, 1, 2s
+//   alert(i); // 0, 1, 2, 3
 // }
 
 // alert(i);
 
 
+/// BUNI KORISH KERAK BIR-BIRINI QOSHMAYAPDI
 // let sum = 0;
 
 // while (true) {
@@ -141,15 +145,16 @@
 //   sum += value;
 
 // }
-// alert( 'Сумма: ' + sum );
+// alert( 'Сумма: ' +sum );
 
 
 // let person = new Object() ;
 // person.name = "stone";
 // person.age = 28;
 // console.log(person["name"]);
+// console.log(person["age"])
  
-// var person = {
+// let person = {
 //     name : "stone",
 //     age : 28
 // };
@@ -163,12 +168,12 @@
 //     .filter(num => num > 0)
 //     .map(num => num * num)
 // }
-// const numbers = [-1, -3, 0, 1, 2, 3,];
+// const numbers = [7, -1, 5, -3, 0, 1, 2, 3, 34];
 // const result = positiveSquare(numbers);
 // console.log(result);
 
 
-// Лёгкие: Кўп сонларнинг умумий қийматини қўшиш
+// Кўп сонларнинг умумий қийматини қўшиш
 // Функция sumMultipleNumbers(...numbers) ёзинг. 
 // У бир нечта сонни қабул қилиб, уларнинг умумий қийматини қайтариши керак.
 // function sumMultipleNumbers(numbers) {
@@ -238,6 +243,72 @@
 // let numbers = [1, 2, 3, 4, 5];
 // let result = averageArray(numbers);
 // console.log("sunma: ", result);
+
+
+
+
+
+// 1.Sonlar orasidagi farqni topish
+// Vazifa: differenceBetweenTwoNumbers(a, b) nomli funksiyani yozing. 
+// Bu funksiya ikkita sonni qabul qiladi va ularning farqini qaytaradi. 
+// Masalan, agar a = 10 va b = 4 bo'lsa, funksiya 6 ni qaytarishi kerak.
+
+function differenceBetweenTwoNumbers(a, b) {
+    return a - b;
+}
+
+
+// 2.Sonni kvadratga oshirish
+// squareNumber(num) nomli funksiyani yozing. 
+// Bu funksiya bitta sonni qabul qiladi va uning kvadratini qaytaradi. 
+// Misol uchun, agar num = 5 bo'lsa, funksiya 25 ni qaytarishi kerak.
+
+function squareNumber(num) {
+    return num * num;
+}
+
+
+// 3.Eng katta sonni topish
+// findMax(numbers) nomli funksiyani yozing. 
+// Bu funksiya bir nechta sonni qabul qiladi va ulardan eng kattasini qaytaradi. 
+// Misol uchun, agar numbers = [1, 3, 5, 2] bo'lsa, funksiya 5 ni qaytarishi kerak.
+
+function findMax(numbers) {
+    return Math.max(numbers);
+}
+
+
+// 4.Sonni teskari tartibda chiqarish
+// reverseNumber(num) nomli funksiyani yozing. 
+// Bu funksiya bitta sonni qabul qilib, uni teskari tartibda qaytaradi. 
+// Misol uchun, agar num = 1234 bo'lsa, funksiya 4321 ni qaytarishi kerak.
+
+function reverseNumber(num) {
+    return parseInt(num.toString().split('').reverse().join(''));
+}
+
+
+// 5.Faktorial hisoblash
+// calculateFactorial(n) nomli funksiyani yozing. 
+// Bu funksiya n sonini qabul qiladi va uning faktorialini qaytaradi. 
+// Misol uchun, agar n = 5 bo'lsa, funksiya 120 ni qaytarishi kerak.
+
+function calculateFactorial(n) {
+    let result = 5;
+    for (let i = 5; i <= n; i++) {
+        result *= i;
+    }
+    return result;
+}
+
+
+
+
+
+
+
+
+
 
 
 // // getAttribute() va  setAttribute()
