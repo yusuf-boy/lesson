@@ -249,13 +249,14 @@
 
 
 // 1.Sonlar orasidagi farqni topish
-// Vazifa: differenceBetweenTwoNumbers(a, b) nomli funksiyani yozing. 
+// differenceBetweenTwoNumbers(a, b) nomli funksiyani yozing. 
 // Bu funksiya ikkita sonni qabul qiladi va ularning farqini qaytaradi. 
 // Masalan, agar a = 10 va b = 4 bo'lsa, funksiya 6 ni qaytarishi kerak.
 
 function differenceBetweenTwoNumbers(a, b) {
     return a - b;
 }
+console.log(differenceBetweenTwoNumbers("10","4"))
 
 
 // 2.Sonni kvadratga oshirish
@@ -266,6 +267,7 @@ function differenceBetweenTwoNumbers(a, b) {
 function squareNumber(num) {
     return num * num;
 }
+console.log(squareNumber("5"))
 
 
 // 3.Eng katta sonni topish
@@ -274,8 +276,10 @@ function squareNumber(num) {
 // Misol uchun, agar numbers = [1, 3, 5, 2] bo'lsa, funksiya 5 ni qaytarishi kerak.
 
 function findMax(numbers) {
-    return Math.max(numbers);
+    return Math.max(...numbers);
 }
+const numbers = [1, 2, 5, 3];
+console.log(findMax(numbers));
 
 
 // 4.Sonni teskari tartibda chiqarish
@@ -284,8 +288,14 @@ function findMax(numbers) {
 // Misol uchun, agar num = 1234 bo'lsa, funksiya 4321 ni qaytarishi kerak.
 
 function reverseNumber(num) {
-    return parseInt(num.toString().split('').reverse().join(''));
+    const reversed = num.toString() // Sonni satrga aylantiramiz
+                       .split('')   // Har bir raqamni ajratamiz
+                       .reverse()   // Raqamlarni teskari tartibda aylantiramiz
+                       .join('');   // Raqamlarni qayta birlashtiramiz
+    return parseInt(reversed) * Math.sign(num); // Natijani songa aylantirib, ishorani saqlab qolamiz
 }
+
+console.log(reverseNumber(1234));
 
 
 // 5.Faktorial hisoblash
@@ -294,18 +304,13 @@ function reverseNumber(num) {
 // Misol uchun, agar n = 5 bo'lsa, funksiya 120 ni qaytarishi kerak.
 
 function calculateFactorial(n) {
-    let result = 5;
-    for (let i = 5; i <= n; i++) {
+    let result = 1;
+    for (let i = 1; i <= n; i++) {
         result *= i;
     }
     return result;
 }
-
-
-
-
-
-
+console.log(calculateFactorial("5"))
 
 
 
