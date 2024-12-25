@@ -313,7 +313,7 @@ console.log(calculateFactorial("5"))
 
 
 function calculateDigitSum(n) {
-    // return String(n).split('').reduce((sum, digit) => sum + Number(digit), 0);
+    return String(n).split('').reduce((sum, digit) => sum + Number(digit), 0);
 }
 console.log(calculateDigitSum(1+2+3))
 
