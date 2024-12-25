@@ -252,10 +252,14 @@
 // differenceBetweenTwoNumbers(a, b) nomli funksiyani yozing. 
 // Bu funksiya ikkita sonni qabul qiladi va ularning farqini qaytaradi. 
 // Masalan, agar a = 10 va b = 4 bo'lsa, funksiya 6 ni qaytarishi kerak.
-
 function differenceBetweenTwoNumbers(a, b) {
+    // return Math.abs(a - b);
     return a - b;
 }
+// const num1 = 10
+// const num2 = 4
+
+// console.log(differenceBetweenTwoNumbers(num1, num2))
 console.log(differenceBetweenTwoNumbers("10","4"))
 
 
@@ -263,7 +267,6 @@ console.log(differenceBetweenTwoNumbers("10","4"))
 // squareNumber(num) nomli funksiyani yozing. 
 // Bu funksiya bitta sonni qabul qiladi va uning kvadratini qaytaradi. 
 // Misol uchun, agar num = 5 bo'lsa, funksiya 25 ni qaytarishi kerak.
-
 function squareNumber(num) {
     return num * num;
 }
@@ -274,7 +277,6 @@ console.log(squareNumber("5"))
 // findMax(numbers) nomli funksiyani yozing. 
 // Bu funksiya bir nechta sonni qabul qiladi va ulardan eng kattasini qaytaradi. 
 // Misol uchun, agar numbers = [1, 3, 5, 2] bo'lsa, funksiya 5 ni qaytarishi kerak.
-
 function findMax(numbers) {
     return Math.max(...numbers);
 }
@@ -286,15 +288,13 @@ console.log(findMax(numbers));
 // reverseNumber(num) nomli funksiyani yozing. 
 // Bu funksiya bitta sonni qabul qilib, uni teskari tartibda qaytaradi. 
 // Misol uchun, agar num = 1234 bo'lsa, funksiya 4321 ni qaytarishi kerak.
-
 function reverseNumber(num) {
     const reversed = num.toString() // Sonni satrga aylantiramiz
                        .split('')   // Har bir raqamni ajratamiz
-                       .reverse()   // Raqamlarni teskari tartibda aylantiramiz
+                       .reverse()   // Raqamlarni (teskari) tartibda aylantiramiz
                        .join('');   // Raqamlarni qayta birlashtiramiz
     return parseInt(reversed) * Math.sign(num); // Natijani songa aylantirib, ishorani saqlab qolamiz
 }
-
 console.log(reverseNumber(1234));
 
 
@@ -302,7 +302,6 @@ console.log(reverseNumber(1234));
 // calculateFactorial(n) nomli funksiyani yozing. 
 // Bu funksiya n sonini qabul qiladi va uning faktorialini qaytaradi. 
 // Misol uchun, agar n = 5 bo'lsa, funksiya 120 ni qaytarishi kerak.
-
 function calculateFactorial(n) {
     let result = 1;
     for (let i = 1; i <= n; i++) {
@@ -313,8 +312,10 @@ function calculateFactorial(n) {
 console.log(calculateFactorial("5"))
 
 
-
-
+function calculateDigitSum(n) {
+    // return String(n).split('').reduce((sum, digit) => sum + Number(digit), 0);
+}
+console.log(calculateDigitSum(1+2+3))
 
 // // getAttribute() va  setAttribute()
 // const link = document.querySelector('a')
