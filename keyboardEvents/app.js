@@ -1,7 +1,7 @@
 // keydown, keyup, keypress
 document.addEventListener('keyup', (e) => {
-    if (e.key == 'm' && e.ctrlKey) {
-        console.log('GOOOL!!!')
+    if (e.key === 'm' && e.ctrlKey) {
+        console.log('goal!!!')
     }
 
     // console.log('Code', e.code)
