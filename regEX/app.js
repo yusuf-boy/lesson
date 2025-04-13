@@ -15,6 +15,9 @@ signupForm.addEventListener('submit', (e) => {
     } else {
 
         message.textContent = "Kiritilayorgan ma'lumot 6 va 12 orasida bo'lshi kerak. shuningdek kichik va katta lotin harflaridan iborat bo'lshi zarur."
+    setTimeout(() => {
+        message.textContent = ''
+    }, 3000)
     }
 })
 
