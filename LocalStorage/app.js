@@ -12,7 +12,8 @@
 // localStorage.clear()
 
 console.log(localStorage.getItem('names'));
-const names = JSON.parse(localStorage.getItem('names')) ? JSON.parse(localStorage.getItem('names')) : []
+const names = JSON.parse(localStorage.getItem('names'))
+    ? JSON.parse(localStorage.getItem('names')) : []
 
 if (names.length > 0) {
     names.forEach((name) => {
