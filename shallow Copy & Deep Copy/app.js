@@ -11,7 +11,7 @@ console.log('a:', b)
 /* -- reference --*/
 const person = {
     name: 'John',
-    age: 32,
+    age: 30,
 }
 
 // spread operator - to'liq ma'lumotni nusxalash
